@@ -106,13 +106,14 @@ body{
 			}
 
 	#maps{
-		margin-top:5px;
-		grid-area: maps;
 		display: flex;
 		justify-content: center;
+		align-content:center;
+		align-items: center;
+		grid-area: maps;
+		margin-top:5px;
 		margin-bottom: 5%;
-		width: auto;
-		align-content: center;
+		width:auto;
 	}
 
 	.bg-img{
@@ -142,39 +143,6 @@ body{
 		text-align: center;		
 		color: $p-color;
 	}
-	
-
-	#btn{
-		grid-area: btn;
-	}
-
-	.btn-nosotros{
-		display:flex;
-		justify-content: center;
-		align-items: center;
-		align-content:center;
-		width: auto;
-		height: auto;
-		border: none;
-		background: linear-gradient(to bottom, brown, darkred);
-		margin:10px 0;
-	}
-
-	.btn-inicio{
-		@extend .btn-nosotros;
-		background: linear-gradient(to bottom, brown, #221F1F);
-		border-radius: 10px;
-	}
-
-	@mixin h3($font-size, $font-weight, $color){
-		font-size: $font-size;
-		font-weight: $font-weight;
-		color: $color;
-	}
-
-	h3{
-		@include h3(1em, 500, #121111)
-	}
 
 h1{
 	font-family: $font;
@@ -184,9 +152,15 @@ h1{
 }
 
 h2{
-	font-family: 'Barlow Condensed', sans-serif;
+	font-family: $font;
 	font-size: $fontSm;
 	font-weight: $f-weight3;
+}
+
+h3{
+	font-size:$fontXs;
+	font-family: $font;
+	font-weight: $f-weight2;
 }
 
 
@@ -203,6 +177,11 @@ h2{
 	}
 }
 
+#iframe{
+	grid-area: iframe;
+	width:50%;
+}
+
 .flex{
 	display: flex;
 	justify-content: center;
@@ -217,4 +196,10 @@ h2{
 
 .iframe{
 	border-radius: 20px;
+}
+
+#form{
+	display: flex;
+	justify-content: flex-start;
+	width:60%;
 }
