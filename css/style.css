@@ -7902,13 +7902,14 @@ body {
   font-size: 1em; }
 
 #maps {
-  margin-top: 5px;
-  grid-area: maps;
   display: flex;
   justify-content: center;
+  align-content: center;
+  align-items: center;
+  grid-area: maps;
+  margin-top: 5px;
   margin-bottom: 5%;
-  width: auto;
-  align-content: center; }
+  width: auto; }
 
 .bg-img {
   background-color: #F9F2F2;
@@ -7933,29 +7934,6 @@ body {
   text-align: center;
   color: #FFA2A2; }
 
-#btn {
-  grid-area: btn; }
-
-.btn-nosotros, .btn-inicio {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  width: auto;
-  height: auto;
-  border: none;
-  background: linear-gradient(to bottom, brown, darkred);
-  margin: 10px 0; }
-
-.btn-inicio {
-  background: linear-gradient(to bottom, brown, #221F1F);
-  border-radius: 10px; }
-
-h3, .h3 {
-  font-size: 1em;
-  font-weight: 500;
-  color: #121111; }
-
 h1, .h1 {
   font-family: "Barlow Condensed", sans-serif;
   font-size: 2em;
@@ -7963,9 +7941,14 @@ h1, .h1 {
   font-weight: 400; }
 
 h2, .h2 {
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
   font-size: 1.5em;
   font-weight: 300; }
+
+h3, .h3 {
+  font-size: 1em;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 200; }
 
 #img-nosotros {
   display: flex;
@@ -7978,6 +7961,10 @@ h2, .h2 {
     width: 90%;
     height: 90%; }
 
+#iframe {
+  grid-area: iframe;
+  width: 50%; }
+
 .flex {
   display: flex;
   justify-content: center;
@@ -7989,6 +7976,11 @@ h2, .h2 {
 
 .iframe {
   border-radius: 20px; }
+
+#form {
+  display: flex;
+  justify-content: flex-start;
+  width: 60%; }
 
 #botonera {
   grid-area: botonera;
@@ -8036,20 +8028,38 @@ h2, .h2 {
 .contenedor {
   display: grid;
   grid-template-columns: 100vw;
-  grid-template-rows: repeat(7, auto);
-  grid-template-areas: "botonera"  "header"  "main" "accesibilidad" "maps" "btn" "footer"; }
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas: "botonera"  "header"  "main" "accesibilidad" "maps" "footer"; }
 
 .contenedor2 {
   display: grid;
   grid-template-columns: 100vw;
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "botonera"  "header"  "main" "footer"; }
+
+.contenedor3 {
+  display: grid;
+  grid-template-columns: 100vw;
   grid-template-rows: repeat(5, auto);
-  grid-template-areas: "botonera"  "header"  "main" "btn" "footer"; }
+  grid-template-areas: "botonera"  "header"  "main" "iframe" "footer"; }
+
+.contenedor4 {
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas: "botonera"  "header"  "main" "maps" "footer"; }
+
+.contenedor5 {
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "botonera"  "header"  "main" "footer"; }
 
 @media (min-width: 768px) {
   .contenedor {
     grid-template-columns: 50vw 50vw;
-    grid-template-rows: repeat(7, auto);
-    grid-template-areas: "botonera botonera"  "header header" "main main" "accesibilidad accesibilidad" "maps maps" "btn btn" "footer footer"; }
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: "botonera botonera"  "header header" "main main" "accesibilidad accesibilidad" "maps maps" "footer footer"; }
   h1, .h1 {
     font-size: 2.5em; }
   h2, .h2 {
@@ -8087,8 +8097,8 @@ h2, .h2 {
 @media (min-width: 1024px) {
   .contenedor {
     grid-template-columns: 40vw 40vw 20vw;
-    grid-template-rows: repeat(6, auto);
-    grid-template-areas: "botonera botonera botonera"  "header header header" "main main main" "btn btn btn" "accesibilidad accesibilidad maps" "footer footer footer"; }
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "botonera botonera botonera"  "header header header" "main main main" "accesibilidad accesibilidad maps" "footer footer footer"; }
   #accesibilidad {
     display: flex;
     flex-direction: row;
@@ -8146,8 +8156,8 @@ h2, .h2 {
 @media (min-width: 1200px) {
   .contenedor {
     grid-template-columns: 25vw 25vw 25vw 25vw;
-    grid-template-rows: repeat(6, auto);
-    grid-template-areas: "botonera botonera botonera botonera"  "header header header header"  "main main main main" "accesibilidad accesibilidad accesibilidad maps" "btn btn btn btn" "footer footer footer footer"; }
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "botonera botonera botonera botonera"  "header header header header"  "main main main main" "accesibilidad accesibilidad accesibilidad maps" "footer footer footer footer"; }
   #accesibilidad {
     display: flex;
     flex-direction: row;
@@ -8181,8 +8191,8 @@ h2, .h2 {
 @media (min-width: 768px) {
   .contenedor2 {
     grid-template-columns: 50vw 50vw;
-    grid-template-rows: repeat(5, auto);
-    grid-template-areas: "botonera botonera"  "header header" "main main" "btn btn" "footer footer"; }
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "botonera botonera"  "header header" "main main" "footer footer"; }
   #img-nosotros {
     display: flex;
     justify-content: center;
@@ -8197,8 +8207,8 @@ h2, .h2 {
 @media (min-width: 1024px) {
   .contenedor2 {
     grid-template-columns: 40vw 40vw 20vw;
-    grid-template-rows: repeat(5, auto);
-    grid-template-areas: "botonera botonera botonera"  "header header header" "main main main" "btn btn btn" "footer footer footer"; }
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "botonera botonera botonera"  "header header header" "main main main" "footer footer footer"; }
   #parrafos {
     margin: 5% 3%;
     font-family: 'Barlow Condensed', sans-serif;
@@ -8209,5 +8219,66 @@ h2, .h2 {
 @media (min-width: 1200px) {
   .contenedor2 {
     grid-template-columns: 25vw 25vw 25vw 25vw;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "botonera botonera botonera botonera"  "header header header header"  "main main main main" "footer footer footer footer"; } }
+
+@media (min-width: 768px) {
+  .contenedor3 {
+    grid-template-columns: 50vw 50vw;
     grid-template-rows: repeat(5, auto);
-    grid-template-areas: "botonera botonera botonera botonera"  "header header header header"  "main main main main" "btn btn btn btn" "footer footer footer footer"; } }
+    grid-template-areas: "botonera botonera"  "header header" "main main" "iframe iframe" "footer footer"; }
+  #iframe {
+    width: 90%; } }
+
+@media (min-width: 1024px) {
+  .contenedor3 {
+    grid-template-columns: 40vw 40vw 20vw;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "botonera botonera botonera"  "header header header" "main main main" "iframe iframe iframe" "footer footer footer"; } }
+
+@media (min-width: 1200px) {
+  .contenedor3 {
+    grid-template-columns: 25vw 25vw 25vw 25vw;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "botonera botonera botonera botonera"  "header header header header"  "main main main main" "iframe iframe iframe iframe" "footer footer footer footer"; } }
+
+@media (min-width: 768px) {
+  .contenedor4 {
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "botonera botonera"  "header header" "main maps" "footer footer"; }
+  #maps {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center; } }
+
+@media (min-width: 1024px) {
+  .contenedor4 {
+    grid-template-columns: 40vw 40vw 20vw;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "botonera botonera botonera"  "header header header" "main maps maps" "footer footer footer"; } }
+
+@media (min-width: 1200px) {
+  .contenedor4 {
+    grid-template-columns: 25vw 25vw 25vw 25vw;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "botonera botonera botonera botonera"  "header header header header"  "main main maps maps" "footer footer footer footer"; } }
+
+@media (min-width: 768px) {
+  .contenedor5 {
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "botonera botonera"  "header header" "main main" "footer footer"; } }
+
+@media (min-width: 1024px) {
+  .contenedor5 {
+    grid-template-columns: 40vw 40vw 20vw;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "botonera botonera botonera"  "header header header" "main main main" "footer footer footer"; } }
+
+@media (min-width: 1200px) {
+  .contenedor5 {
+    grid-template-columns: 25vw 25vw 25vw 25vw;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "botonera botonera botonera botonera"  "header header header header"  "main main main main" "footer footer footer footer"; } }
