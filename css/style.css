@@ -7813,6 +7813,19 @@ textarea.form-control-lg {
 * {
   font-family: 'Roboto', sans-serif; }
 
+#botonera {
+  grid-area: botonera;
+  background-color: #F7F7F7; }
+  #botonera ul li a {
+    font-size: 1em; }
+  #botonera #links {
+    color: #121111;
+    font-size: 1em; }
+    #botonera #linkshover {
+      color: #A80808;
+      font-weight: 300;
+      font-size: 1.5em; }
+
 body {
   background-color: #A80808;
   overflow-x: hidden; }
@@ -7981,19 +7994,6 @@ h3, .h3 {
   display: flex;
   justify-content: flex-start;
   width: 60%; }
-
-#botonera {
-  grid-area: botonera;
-  background-color: #F7F7F7; }
-  #botonera ul li a {
-    font-size: 1em; }
-  #botonera #links {
-    color: #121111;
-    font-size: 1em; }
-    #botonera #linkshover {
-      color: #A80808;
-      font-weight: 300;
-      font-size: 1.5em; }
 
 #footer {
   grid-area: footer; }
