@@ -1,14 +1,14 @@
 {
-  "name": "repoterceraentrega",
+  "name": "Automotores Giangreco",
   "version": "1.0.0",
-  "description": "",
+  "description": "Página destinada a un taller automotor, tiene 5 páginas. El objetivo es darle más influencia al taller.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss scss/style.scss css/style.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
-  "author": "",
+  "author": "Joaquín Ignacio Giangreco",
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^7.0.1",
