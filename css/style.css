@@ -84,7 +84,6 @@ body {
 
 #horarios {
   margin-bottom: 10px;
-  margin-right: 4%;
   height: auto;
   background-color: #F9F2F2; }
 
@@ -94,7 +93,6 @@ body {
 
 #llegada {
   margin-top: 10px;
-  margin-right: 4%;
   height: auto;
   background-color: #F9F2F2;
   font-size: 1em; }
@@ -183,6 +181,12 @@ h3 {
   display: flex;
   justify-content: flex-start;
   width: 60%; }
+
+.button {
+  background-color: #1986CB;
+  border-color: #1986CB;
+  border-radius: 5px;
+  border-color: #1986CB; }
 
 #footer {
   grid-area: footer; }
